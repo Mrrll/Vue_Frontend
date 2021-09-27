@@ -1,5 +1,19 @@
-# vue-frontend
-
+# vue-frondend
+Aprendiendo Vue Js
+## Vu-Cli
+### Instalacion
+>`Typee:` En Consola ...
+```console
+npm install -g @vue/cli
+```
+>Crear nuevo Proyecto
+```console
+vue create hello-world
+```
+O Usando GUI
+```console
+vue ui
+```
 ## Project setup
 ```
 npm install

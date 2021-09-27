@@ -14,6 +14,11 @@ O Usando GUI
 ```console
 vue ui
 ```
+### Instalacion Vuetify
+>`Typee:` En Consola ...
+```console
+vue add vuetify
+```
 ## Project setup
 ```
 npm install

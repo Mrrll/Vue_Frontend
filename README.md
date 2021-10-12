@@ -137,7 +137,7 @@ export default {
 ```
 [Subir](#top)
 
-<a name="item6"></a>
+<a name="item7"></a>
 ### Escuchar cambios en las propiedades
 
 **`Nota:` 

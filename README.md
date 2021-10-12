@@ -9,6 +9,7 @@ Aprendiendo Vue Js
 - [Comandos Ejecutables](#item3) 
 - [Personalizar la configuración](#item4)
 - [Comunicación Hijo a Padre](#item5)
+- [Comunicación Padre a Hijo](#item6)
 
 ## Vu-Cli
 <a name="item1"></a>
@@ -74,11 +75,11 @@ Para crear el nombre de referencia del componente hijo se utiliza `$ref` segido 
 
 <script>
 export default {
-methods: {
-    PruebaPadre(){
-      this.$refs.componente.PruebaHijo()
-    }
-  },
+    methods: {
+        PruebaPadre(){
+            this.$refs.componente.PruebaHijo()
+        }
+    },
 }
 </script>
 ```
@@ -86,14 +87,50 @@ methods: {
 
 ```vue
 <script>
+export default {  
+    methods: {   
+        PruebaHijo(){
+            console.log("HOLA DESDE PRUEBA HIJO");
+        }
+    },
+}
+</script>
+```
+[Subir](#top)
+
+<a name="item6"></a>
+### Comunicación Padre a Hijo
+
+**`Nota:` 
+Para emitir un metodo se utiliza  `@` y un nombre de referencia `@prueba` y indicamos el metodo el padre que queremos emitir `@prueba='PruebaPadre'`.**
+
+> Archivo Padre y dentro de el :
+
+```vue
+ <hijo @prueba="PruebaPadre"></hijo>
+ 
+<script>
 export default {
-  data() {
-    return {
-methods: {   
-  PruebaHijo(){
-      console.log("HOLA DESDE PRUEBA HIJO");
-    }
-  },
+    methods: {
+        PruebaPadre(){
+            console.log("HOLA DESDE PRUEBA PADRE");
+        }
+    },
+}
+</script>
+```
+> Archivo Hijo y dentro de el :
+
+```vue
+<v-btn @click="PruebaHijo">Prueba</v-btn>
+
+<script>
+export default {  
+    methods: {   
+        PruebaHijo(){
+            this.$emit("prueba");
+        }
+    },
 }
 </script>
 ```

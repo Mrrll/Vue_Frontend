@@ -10,6 +10,7 @@ Aprendiendo Vue Js
 - [Personalizar la configuración](#item4)
 - [Comunicación Hijo a Padre (evento)](#item5)
 - [Comunicación Padre a Hijo (evento)](#item6)
+- [Escuchar cambios en las propiedades](#item7)
 
 ## Vu-Cli
 <a name="item1"></a>
@@ -135,3 +136,30 @@ export default {
 </script>
 ```
 [Subir](#top)
+
+<a name="item6"></a>
+### Escuchar cambios en las propiedades
+
+**`Nota:` 
+Para Escuchar cambios en las propiedades se utiliza ´watch:{ ... }´.**
+
+> Ejemplo ...
+
+```vue
+<v-text-field
+  label="Firstname"
+  v-model="firstname"
+></v-text-field>
+
+<script>
+export default {
+    watch: {
+        firstname: function (val) {
+            console.log(val);
+        },
+    },  
+}
+</script>
+```
+[Subir](#top)
+

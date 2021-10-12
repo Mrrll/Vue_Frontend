@@ -63,11 +63,15 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 <a name="item5"></a>
 ### Comunicación Hijo a Padre
 
-> Para crear el nombre de referencia del componente hijo se utiliza `$ref` segido del (Nombre) `$ref='nombre'` en este caso el nombre es `componente`.
+**`Nota:` 
+Para crear el nombre de referencia del componente hijo se utiliza `$ref` segido del (Nombre) `$ref='nombre'` en este caso el nombre es `componente`.**
+
 > Archivo Padre y dentro de el :
+
 ```vue
 <hijo ref="componente"></hijo>
 <v-btn @click="PruebaPadre">Prueba</v-btn>
+
 <script>
 export default {
 methods: {
@@ -79,9 +83,9 @@ methods: {
 </script>
 ```
 > Archivo Hijo y dentro de el :
+
 ```vue
 <script>
-import { mapMutations } from 'vuex'
 export default {
   data() {
     return {
@@ -93,3 +97,4 @@ methods: {
 }
 </script>
 ```
+[Subir](#top)

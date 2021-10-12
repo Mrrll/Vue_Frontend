@@ -102,7 +102,7 @@ export default {
 ### Comunicación Padre a Hijo
 
 **`Nota:` 
-Para emitir un metodo se utiliza  `@` y un nombre de referencia `@prueba` y indicamos el metodo el padre que queremos emitir `@prueba='PruebaPadre'`.**
+Para emitir un metodo se utiliza  `@` y un nombre de referencia `@prueba` y indicamos el metodo del padre que queremos emitir `@prueba='PruebaPadre'`.**
 
 > Archivo Padre y dentro de el :
 

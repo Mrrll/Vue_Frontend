@@ -107,7 +107,7 @@ Para emitir un metodo se utiliza  `@` y un nombre de referencia `@prueba` y indi
 > Archivo Padre y dentro de el :
 
 ```vue
- <hijo @prueba="PruebaPadre"></hijo>
+<hijo @prueba="PruebaPadre"></hijo>
  
 <script>
 export default {

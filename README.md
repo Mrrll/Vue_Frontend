@@ -8,8 +8,8 @@ Aprendiendo Vue Js
 - [Instalacion Vuetify](#item2)
 - [Comandos Ejecutables](#item3) 
 - [Personalizar la configuración](#item4)
-- [Comunicación Hijo a Padre](#item5)
-- [Comunicación Padre a Hijo](#item6)
+- [Comunicación Hijo a Padre (evento)](#item5)
+- [Comunicación Padre a Hijo (evento)](#item6)
 
 ## Vu-Cli
 <a name="item1"></a>
@@ -62,7 +62,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 [Subir](#top)
 <a name="item5"></a>
-### Comunicación Hijo a Padre
+### Comunicación Hijo a Padre (evento)
 
 **`Nota:` 
 Para crear el nombre de referencia del componente hijo se utiliza `$ref` segido del (Nombre) `$ref='nombre'` en este caso el nombre es `componente`.**
@@ -99,7 +99,7 @@ export default {
 [Subir](#top)
 
 <a name="item6"></a>
-### Comunicación Padre a Hijo
+### Comunicación Padre a Hijo (evento)
 
 **`Nota:` 
 Para emitir un metodo se utiliza  `@` y un nombre de referencia `@prueba` y indicamos el metodo del padre que queremos emitir `@prueba='PruebaPadre'`.**
